@@ -2,7 +2,7 @@
 
 namespace TTqco\Main;
 # i didnt know what to use so i just keeps stacking em on
-use pocketmine\plugin\PluginBase as PB
+use pocketmine\plugin\PluginBase as PB;
 use pocketmine\event\Listener as L;
 use pocketmine\Player;
 use pocketmine\event\Listener;
