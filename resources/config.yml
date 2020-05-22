@@ -3,7 +3,9 @@
 # |  __| |  _|  _/ _ \/ __| __|\___ \| __/ _` | '__|
 # | |____| | | ||  __/ (__| |_ ____) | || (_| | |   
 # |______|_| |_| \___|\___|\__|_____/ \__\__,_|_|   
-                                                  
+
+Name: "EffectStar"
+# ^^ Name Of Item After Interacted With
 Item ID: 399
 # ^^ Choses Whitch Item Will Be Tapped On The Ground To Give The Effect
 Effect ID: 5 
