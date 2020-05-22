@@ -19,6 +19,8 @@ use pocketmine\event\player\PlayerInteractEvent;
 
 use pocketmine\utils\TextFormat;
 
+use pocketmine\entity\Effect;
+
 class Main extends PluginBase implements Listener {
 
 public function onEnable() {
