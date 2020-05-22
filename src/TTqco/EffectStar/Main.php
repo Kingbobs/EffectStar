@@ -24,13 +24,14 @@ class Main extends PluginBase implements Listener {
 public function onEnable() {
 $this->getServer()->getPluginManager()->registerEvents($this,$this);
 $this->getLogger()->info(TextFormat::GREEN . "EffectStar Is Online");
+$this->saveResource("config.yml")
 }
 
 
 public function onTouch(PlayerInteractEvent $event){
         $player = $event->getPlayer();
         $item = $event->getItem();
-        $item->setCustomName("$noi");
+        $item->setCustomName("Mega boost");
 
 #Effects
 $effect = Effect::getEffect($effectid); //Effect Id 
