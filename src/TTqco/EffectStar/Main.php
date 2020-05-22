@@ -36,20 +36,17 @@ public function onTouch(PlayerInteractEvent $event){
         $item->setCustomName("Mega boost");
 
 #Effects
-$effect = Effect::getEffect($effectid); //Effect Id 
-$effect->setDuration($effectduration); //duration
-$effect->setAmplifier($effectamp); //Amp
-$effect->setVisible($effectvisible);
+$effect = Effect::getEffect(5); //Effect Id 
+$effect->setDuration(6000); //duration
+$effect->setAmplifier(3); //Amp
+$effect->setVisible(true);
 
      switch($item->getId()){
 
    case 399: //Now can be changed on config as of build #10
   $player->sendMessage(TF::GREEN . "Your wish has been granted");
   $player->addEffect($effect); //adds effect stated in config
-  $effectid = $this->getConfig()->get("Effect ID");
-  $effectduration = $this->getConfig()->get("Effect Duration");
-  $effectamp = $this->getConfig()->get("Effect Amp");
-  $effectvisible = $this->getConfig()->get("Effect Visible");
+
 break;
      }
 }
