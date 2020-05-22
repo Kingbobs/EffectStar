@@ -29,6 +29,7 @@ $this->getLogger()->info(TextFormat::GREEN . "EffectStar Is Online");
 public function onTouch(PlayerInteractEvent $event){
         $player = $event->getPlayer();
         $item = $event->getItem();
+        $item->setCustomName("Mega Boost");
 
 #Effects
 $effect = Effect::getEffect($effectid); //Effect Id 
