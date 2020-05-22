@@ -1,6 +1,6 @@
 <?php
 
-namespace TTqco\Main;
+namespace TTqco\EffectStar;
 # i didnt know what to use so i just keeps stacking em on
 use pocketmine\Player;
 use pocketmine\Server;
