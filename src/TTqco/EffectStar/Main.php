@@ -2,21 +2,22 @@
 
 namespace TTqco\Main;
 # i didnt know what to use so i just keeps stacking em on
-use pocketmine\plugin\PluginBase as PB
 use pocketmine\Player;
-use pocketmine\event\Listener;
-use pocketmine\entity\Effect;
-use pocketmine\plugin\PluginBase;
-use pocketmine\item\Item;
-use pocketmine\utils\TextFormat as TF;
 use pocketmine\Server;
-use pocketmine\utils\TextFormat;
+
+use pocketmine\plugin\PluginBase;
+use pocketmine\plugin\PluginBase as PB;
+
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\command\CommandExecutor;
-use pocketmine\command\ConsoleCommandSender;
-use pocketmine\event\player\PlayerInteractEvent;
+
 use pocketmine\utils\Config;
+
+use pocketmine\event\Listener;
+
+use pocketmine\event\player\PlayerInteractEvent;
+
+use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase implements Listener {
 
@@ -29,7 +30,7 @@ $this->getLogger()->info(TextFormat::GREEN . "EffectStar Is Online");
 public function onTouch(PlayerInteractEvent $event){
         $player = $event->getPlayer();
         $item = $event->getItem();
-        $item->setCustomName("Mega Boost");
+        $item->setCustomName("$noi");
 
 #Effects
 $effect = Effect::getEffect($effectid); //Effect Id 
@@ -47,6 +48,7 @@ $effect->setVisible($effectvisible);
   $effectamp = $this->getConfig()->get("Effect Amp");
   $effectvisible = $this->getConfig()->get("Effect Visible");
   $idofitem = $this->getConfig()->get("Item ID");
+  $noi = $this->getConfig()->get("Name");
 break;
      }
 }
