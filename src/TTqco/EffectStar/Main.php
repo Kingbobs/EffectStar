@@ -47,7 +47,6 @@ $effect->setVisible($effectvisible);
   $effectduration = $this->getConfig()->get("Effect Duration");
   $effectamp = $this->getConfig()->get("Effect Amp");
   $effectvisible = $this->getConfig()->get("Effect Visible");
-  $idofitem = $this->getConfig()->get("Item ID");
 break;
      }
 }
