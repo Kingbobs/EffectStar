@@ -24,7 +24,7 @@ class Main extends PluginBase implements Listener {
 public function onEnable() {
 $this->getServer()->getPluginManager()->registerEvents($this,$this);
 $this->getLogger()->info(TextFormat::GREEN . "EffectStar Is Online");
-$this->saveResource("config.yml")
+$this->saveResource("config.yml");
 }
 
 
