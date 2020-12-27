@@ -18,8 +18,8 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
 
 use pocketmine\utils\TextFormat;
-
 use pocketmine\entity\Effect;
+use pocketmine\entity\EffectInstance;
 
 class Main extends PluginBase implements Listener {
 
